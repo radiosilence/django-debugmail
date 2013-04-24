@@ -5,6 +5,7 @@ Send e-mails to ADMINS instead of their recipients.
 
 Quickstart
 ----------
+
 ::
     pip install django-debugmail
 
