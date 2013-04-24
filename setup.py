@@ -15,7 +15,7 @@ for dep in open('requirements.txt').read().split("\n"):
 
 setup(
     name="django-debugmail",
-    version="1.0",
+    version="1.0.1",
     description="Debug based e-mail backend.",
     author=u"James Cleveland",
     author_email="jc@blackflags.co.uk",
