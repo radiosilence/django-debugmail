@@ -7,8 +7,12 @@ Quickstart
 ----------
 
 ::
+
     pip install django-debugmail
 
 Add this to your development configuration:
+
 ::
+
     EMAIL_BACKEND = 'debugmail.backends.DebugEmailBackend'
+
