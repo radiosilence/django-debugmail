@@ -5,7 +5,6 @@ from django.core.mail.backends.smtp import EmailBackend
 class DebugEmailBackend(EmailBackend):
     def send_messages(self, email_messages):
         for email in email_messages:
-            email.bcc.extend([admin[1] for admin in settings.ADMINS])
             email.subject = u"{0} [To: {1} Cc: {2} Bcc: {3}]".format(
                 email.subject,
                 u', '.join(email.to),
