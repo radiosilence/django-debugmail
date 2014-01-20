@@ -14,4 +14,4 @@ class DebugEmailBackend(EmailBackend):
             email.to = [admin[1] for admin in settings.ADMINS]
             email.cc = []
             email.bcc = []
-        super(DebugEmailBackend, self).send_messages(email_messages)
+        return super(DebugEmailBackend, self).send_messages(email_messages)
